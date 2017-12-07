@@ -7,10 +7,11 @@
  {
 	 int count; // переменная для выбора в switch
 	 setlocale(LC_ALL, "rus");
-cout << "Vvedite 1 chislo";
+	 double a, b;
+cout << "Vvedite 1 chislo ";
 cin >> a;
 
-cout << "Vvedite 2 chislo";
+cout << "Vvedite 2 chislo ";
 cin >> b;
 	 
 		 cout << "Vibirite deistvie: 1-clojenie; 2-vichitanie; 3-ymnojenie; 4-delenie: ";
@@ -29,12 +30,12 @@ cin >> b;
 					 }
 				 case 3: // если count = 3
 					 {
-					 cout << "выбранная функция находится в разработке ";
+					 cout << Ym(a,b) << endl;
 						 break;
 						 }
 					 case 4: // если count = 4
 						 {
-						 cout << "выбранная функция находится в разработке ";
+						 cout << Del(a,b) << endl;
 							 break;
 							 }
 						 default: // если count равно любому другому значению
