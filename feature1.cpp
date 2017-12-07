@@ -1,35 +1,12 @@
 #include "stdafx.h"
- #include <iostream>
- using namespace std;
-
- int main()
-{
-	 int count; // переменная для выбора в switch
- double a, b; // переменные для хранения операндов
- cout << " Vvedite pervoe chislo : ";
- cin >> a;
- cout << "Vvedite vtoroe chislo : ";
- cin >> b;
- 
-	 setlocale(LC_ALL, "rus");
-	 
-		 cout << "Vibirite deistvie: 1-clojenie; 2-vichitanie; 3-ymnojenie; 4-delenie: ";
-	 cin >> count;
-	 switch (count) // начало оператора switch
-		 {
-		 case 1: // если count = 1
-			 {
-			 cout << a << " + " << b << " = " << a + b << endl; // выполнить сложение
-                              break;
-				 }
-		 case 2: // если count = 2
-				 {
-			cout << a << " - " << b << " = " << a - b << endl; // выполнить вычитание
-                                break;
-					 }
-default: // если count равно любому другому значению
- cout << " Nepravilni vvod  " << endl;
- }
- system("pause");
- return 0;
- }
+ #include "funcs.h"
+  
+  double Summa (double a, double b)
+  {
+	  return a+b;
+  }
+   double Raznost (double a, double b)
+  {
+	  return a-b;
+  }
+  
