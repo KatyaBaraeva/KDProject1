@@ -1,11 +1,17 @@
 #include "stdafx.h"
  #include <iostream>
+ #include "funcs.h"
  using namespace std;
 
  int main()
  {
 	 int count; // переменная для выбора в switch
-	 setlocale(LC_ALL, "rus");
+	 setlocale(LC_ALL, "rus");
+cout << "Vvedite 1 chislo";
+cin >> a;
+
+cout << "Vvedite 2 chislo";
+cin >> b;
 	 
 		 cout << "Vibirite deistvie: 1-clojenie; 2-vichitanie; 3-ymnojenie; 4-delenie: ";
 	 cin >> count;
@@ -13,12 +19,12 @@
 		 {
 		 case 1: // если count = 1
 			 {
-			 cout << "выбранная функция находится в разработке ";
+			 cout << Summa(a,b) << endl;
 				 break;
 				 }
 		 case 2: // если count = 2
 				 {
-			 cout << "выбранная функция находится в разработке ";
+			 cout << Raznost(a,b) << endl;;
 					 break;
 					 }
 				 case 3: // если count = 3
